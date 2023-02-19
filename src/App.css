@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg_image {
+  background-image: url('./img/windowsXP_Background.jpg');
+  background-size: cover;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.draggable {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100px;
+}
+
+.draggable p {
   color: white;
+  text-shadow: 2px 2px #000;
+}
+.taskbar {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  background-image: linear-gradient(#2497da, #245DDA 20%);
+  background-size: cover;
+  color: white;
+  font-family: 'Segoe UI';
 }
 
-.App-link {
-  color: #61dafb;
+
+.start {
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+  background-image: linear-gradient(#47bf41, #34912f 20%);
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+  border-radius: 0 15% 15% 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.start #icon {
+  padding: 4px 10px;
+}
+
+.task {}
+
+.tray {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(#10dae8, #0da3ef 20%);
+  padding: 10px;
+
+}
+.tray * {
+  padding: 5px;
+}
+
+.tray * {
+  text-align: center;
 }

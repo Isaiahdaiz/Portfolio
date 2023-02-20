@@ -1,38 +1,32 @@
 import './App.css';
 import Draggable, { DraggableCore } from 'react-draggable';
-import contact from './img/msoeres.dll_14_52-6.png';
-import React, { useState } from "react";
+import contactDesktopIcon from './img/msoeres.dll_14_52-6.png';
+import React from "react";
+import ContactMe from './Programs/ContactMe';
 
 function Desktop() {
     return (
         <>
             <ContactMeIcon />
-            <ContactMePopup />
         </>
     )
 }
-
 function ContactMeIcon() {
+    const [showResults, setShowWindow] = React.useState(false)
+    const onDoubleClick = () => setShowWindow(true)
+    const closeWindow = () => setShowWindow(false)
     return (
-        <Draggable defaultClassName={"draggable"} defaultPosition={{ x: 25, y: 25 }}>
-            <div>
-                <img id="icon" src={contact} alt="Contact Me"></img>
-                <p>Contact Me</p>
-            </div>
-            
-        </Draggable>
+        <>
+            <Draggable defaultClassName={"draggable-icon"} defaultPosition={{ x: 25, y: 25 }}>
+                <div onDoubleClick={onDoubleClick}>
+                    <img id="icon" src={contactDesktopIcon} alt="Contact Me"></img>
+                    <p>Contact Me</p>
+                </div>
+
+            </Draggable>
+            {showResults ? <ContactMe closeWindow={closeWindow} /> : null}
+
+        </>
     )
 }
-
-function ContactMePopup() {
-    return (
-        <Draggable defaultClassName={"draggable"} defaultPosition={{ x: 25, y: 25 }}>
-            <div>
-                <img id="icon" src={contact} alt="Contact Me"></img>
-                <p>Contact Me</p>
-            </div>
-        </Draggable>
-    )
-}
-
 export default Desktop;

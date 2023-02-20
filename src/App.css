@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  font-family: 'Segoe UI';
 }
 
 body {
@@ -12,30 +13,56 @@ body {
   height: 100vh;
 }
 
-.draggable {
+.draggable-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100px;
+  user-select: none;
 }
 
-.draggable p {
+.draggable-icon p {
   color: white;
   text-shadow: 2px 2px #000;
 }
-.taskbar {
+
+.draggable-window {
+  background-color: silver;
+  border: 3px solid #0c4fc3;
+  border-top: 0;
+  border-radius: 2% 2% 0 0;
+  width: 500px;
+  resize: both;
+  overflow: auto;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.draggable-window p {
+  flex-grow: 2;
+}
+
+.draggable-window .content {
+}
+
+.draggable-window .titlebar {
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  height: 40px;
-  background-image: linear-gradient(#2497da, #245DDA 20%);
-  background-size: cover;
+  background-image: linear-gradient(#0c89c3, #0c4fc3 40%);
+  background-color: #0c4fc3;
+  padding: 3px;
+  gap: 5px;
   color: white;
-  font-family: 'Segoe UI';
+  font-weight: bold;
+  user-select: none;
 }
+
+
+.draggable-window img {
+  padding: 3px;
+}
+
+
 
 
 .start {
@@ -47,7 +74,7 @@ body {
   font-style: italic;
   font-weight: bold;
   text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
-  border-radius: 0 15% 15% 0;
+  border-radius: 0 10% 10% 0;
 }
 
 .start #icon {
@@ -56,17 +83,30 @@ body {
 
 .task {}
 
+.taskbar {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  background-image: linear-gradient(#2497da, #245DDA 20%);
+  background-size: cover;
+  color: white;
+  user-select: none;
+}
+
 .tray {
   display: flex;
   align-items: center;
+  border-left: 1.5px solid #07415e;
   background-image: linear-gradient(#10dae8, #0da3ef 20%);
   padding: 10px;
 
 }
-.tray * {
-  padding: 5px;
-}
 
 .tray * {
+  padding: 5px;
   text-align: center;
 }

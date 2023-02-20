@@ -1,13 +1,13 @@
 import './App.css';
 import logo from './img/windows-xp-start-icon.png';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
+import ContactMeTask from './Tasks/ContactMeTask';
 
-
-function Taskbar() {
+function Taskbar(props) {
     return (
         <div class="taskbar">
             <Start />
-            <Tasks />
+            <Tasks toggleContactWindow={props.toggleContactWindow}/>
             <Tray />
         </div>
     );
@@ -20,10 +20,10 @@ function Start() {
         </div>
     )
 }
-function Tasks() {
+function Tasks(props) {
     return (
         <div class="tasks">
-            Task
+            <ContactMeTask toggleContactWindow={props.toggleContactWindow}/>
         </div>
     )
 }

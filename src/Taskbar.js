@@ -7,7 +7,7 @@ function Taskbar(props) {
     return (
         <div class="taskbar">
             <Start />
-            <Tasks toggleContactWindow={props.toggleContactWindow}/>
+            <Tasks toggleContactWindow={props.toggleContactWindow} isContactTaskVisible={props.isContactTaskVisible} />
             <Tray />
         </div>
     );
@@ -23,7 +23,7 @@ function Start() {
 function Tasks(props) {
     return (
         <div class="tasks">
-            <ContactMeTask toggleContactWindow={props.toggleContactWindow}/>
+            {props.isContactTaskVisible && <ContactMeTask toggleContactWindow={props.toggleContactWindow}/>}
         </div>
     )
 }

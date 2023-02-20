@@ -101,6 +101,15 @@ body {
   width: 200px;
 }
 
+.task-active {
+  display: flex;
+  align-items: center;
+  border-radius: 3%;
+  background-image: linear-gradient(#24ceda, #3f24da 20%);
+  height: 33px;
+  width: 200px;
+}
+
 .task img {
   padding: 4px;
   -webkit-user-drag: none;

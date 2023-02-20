@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio_WinXP/static/css/main.7f92c710.css",
-    "main.js": "/Portfolio_WinXP/static/js/main.b5e874f6.js",
+    "main.css": "/Portfolio_WinXP/static/css/main.12a50da4.css",
+    "main.js": "/Portfolio_WinXP/static/js/main.0b3221ba.js",
     "static/js/787.bc7d429a.chunk.js": "/Portfolio_WinXP/static/js/787.bc7d429a.chunk.js",
     "static/media/windowsXP_Background.jpg": "/Portfolio_WinXP/static/media/windowsXP_Background.17ce657ab1362be245f5.jpg",
     "index.html": "/Portfolio_WinXP/index.html",
-    "main.7f92c710.css.map": "/Portfolio_WinXP/static/css/main.7f92c710.css.map",
-    "main.b5e874f6.js.map": "/Portfolio_WinXP/static/js/main.b5e874f6.js.map",
+    "main.12a50da4.css.map": "/Portfolio_WinXP/static/css/main.12a50da4.css.map",
+    "main.0b3221ba.js.map": "/Portfolio_WinXP/static/js/main.0b3221ba.js.map",
     "787.bc7d429a.chunk.js.map": "/Portfolio_WinXP/static/js/787.bc7d429a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f92c710.css",
-    "static/js/main.b5e874f6.js"
+    "static/css/main.12a50da4.css",
+    "static/js/main.0b3221ba.js"
   ]
 }

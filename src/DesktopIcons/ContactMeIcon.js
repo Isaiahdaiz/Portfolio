@@ -6,7 +6,7 @@ import React from "react";
 function ContactMeIcon(props) {
     return (
         <>
-            <Draggable defaultClassName={"draggable-icon"} defaultPosition={{ x: 25, y: 25 }}>
+            <Draggable defaultClassName={"draggable-icon"} defaultPosition={{ x: 25, y: 50 }}>
                 <div onDoubleClick={props.showWindow}>
                     <img id="icon" src={contactDesktopIcon} alt="Contact Me"></img>
                     <p>Contact Me</p>

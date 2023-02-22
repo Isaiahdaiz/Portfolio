@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio_WinXP/static/css/main.6abfb597.css",
-    "main.js": "/Portfolio_WinXP/static/js/main.227d77b4.js",
+    "main.css": "/Portfolio_WinXP/static/css/main.35d12422.css",
+    "main.js": "/Portfolio_WinXP/static/js/main.80a5196c.js",
     "static/js/787.bc7d429a.chunk.js": "/Portfolio_WinXP/static/js/787.bc7d429a.chunk.js",
     "static/media/windowsXP_Background.jpg": "/Portfolio_WinXP/static/media/windowsXP_Background.17ce657ab1362be245f5.jpg",
     "static/media/Resume Isaiah.pdf": "/Portfolio_WinXP/static/media/Resume Isaiah.4ae38261dcc79f2ecd9e.pdf",
     "static/media/PDF_file_icon.png": "/Portfolio_WinXP/static/media/PDF_file_icon.4f4dcc2fd4eb38c4ed54.png",
     "index.html": "/Portfolio_WinXP/index.html",
-    "main.6abfb597.css.map": "/Portfolio_WinXP/static/css/main.6abfb597.css.map",
-    "main.227d77b4.js.map": "/Portfolio_WinXP/static/js/main.227d77b4.js.map",
+    "main.35d12422.css.map": "/Portfolio_WinXP/static/css/main.35d12422.css.map",
+    "main.80a5196c.js.map": "/Portfolio_WinXP/static/js/main.80a5196c.js.map",
     "787.bc7d429a.chunk.js.map": "/Portfolio_WinXP/static/js/787.bc7d429a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6abfb597.css",
-    "static/js/main.227d77b4.js"
+    "static/css/main.35d12422.css",
+    "static/js/main.80a5196c.js"
   ]
 }

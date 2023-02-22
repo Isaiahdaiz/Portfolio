@@ -2,6 +2,7 @@ import './App.css';
 import logo from './img/windows-xp-start-icon.png';
 import React, { useState } from 'react';
 import ContactMeTask from './Tasks/ContactMeTask';
+import ResumeTask from './Tasks/ResumeTask';
 import AboutMeTask from './Tasks/AboutMeTask';
 
 function Taskbar(props) {
@@ -10,6 +11,7 @@ function Taskbar(props) {
             <Start />
             <Tasks 
             toggleAboutWindow={props.toggleAboutWindow} isAboutTaskVisible={props.isAboutTaskVisible}
+            toggleResumeWindow={props.toggleResumeWindow} isResumeTaskVisible={props.isResumeTaskVisible} 
             toggleContactWindow={props.toggleContactWindow} isContactTaskVisible={props.isContactTaskVisible} 
             />
             <Tray />
@@ -27,8 +29,9 @@ function Start() {
 function Tasks(props) {
     return (
         <div class="tasks">
-            {props.isAboutTaskVisible && <AboutMeTask toggleAboutWindow={props.toggleAboutWindow}/>}
-            {props.isContactTaskVisible && <ContactMeTask toggleContactWindow={props.toggleContactWindow}/>}
+            {props.isAboutTaskVisible && <AboutMeTask toggleWindow={props.toggleAboutWindow}/>}
+            {props.isResumeTaskVisible && <ResumeTask toggleWindow={props.toggleResumeWindow}/>}
+            {props.isContactTaskVisible && <ContactMeTask toggleWindow={props.toggleContactWindow}/>}
         </div>
     )
 }

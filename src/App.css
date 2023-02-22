@@ -24,6 +24,7 @@ body {
 .close:hover {
   background-image: linear-gradient(#e6907a, #e0773a 40%);
 }
+
 .content {
   background-color: rgba(255, 255, 255, 0.89);
   border: 1px solid gray;
@@ -73,9 +74,6 @@ body {
 .draggable-window p {
   flex-grow: 2;
 }
-
-.draggable-window .content {}
-
 
 .draggable-window img {
   padding: 3px;
@@ -155,6 +153,8 @@ body {
 }
 
 .task img {
+  height: 24px;
+  width: 24px;
   padding: 4px;
   -webkit-user-drag: none;
 }
@@ -194,6 +194,13 @@ body {
   padding-top: 3px;
   text-align: left;
 }
+
+.titlebar img {
+  height: 15px;
+  width: 15px;
+  -webkit-user-drag: none;
+}
+
 .tray {
   display: flex;
   align-items: center;
@@ -229,7 +236,10 @@ body {
   width: 19px;
   text-align: center;
 }
+.maximize:hover {
+  background-image: linear-gradient(#0c9ec3, #0c89c3 40%);
 
+}
 .restore {
   background-image: linear-gradient(#0c89c3, #0c4fc3 40%);
   border: 2px solid white;

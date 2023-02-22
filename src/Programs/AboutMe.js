@@ -1,6 +1,6 @@
 import '../App.css';
 import Draggable from 'react-draggable';
-import AboutWindowIcon from '../img/msinfo32.exe_14_128-7.png';
+import windowIcon from '../img/msinfo32.exe_14_128-7.png';
 import React, { useState } from 'react';
 
 
@@ -45,7 +45,7 @@ function AboutMe(props) {
         >
             <div style={style}>
                 <div class="titlebar">
-                    <img id="icon" src={AboutWindowIcon} alt="About Me"></img>
+                    <img id="icon" src={windowIcon} alt="About Me"></img>
                     <p>About Me</p>
                     <div class="restore" onClick={props.restoreWindow}>-</div>
                     {/* {isMaximized ? <div class="minimize" onClick={handleMinimizeClick}>=</div> : <div class="maximize" onClick={handleMaximizeClick}>=</div>} */}

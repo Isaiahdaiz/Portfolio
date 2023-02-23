@@ -2,6 +2,8 @@ import '../App.css';
 import Draggable from 'react-draggable';
 import windowIcon from '../img/msinfo32.exe_14_128-7.png';
 import React, { useState } from 'react';
+import algoma from '../img/296109870_878575170182040_4640716686003688037_n.jpg'
+import nait from '../img/NAIT-Shield.jpg'
 
 
 function AboutMe(props) {
@@ -66,8 +68,31 @@ function AboutMe(props) {
                     </button>
                 </div>
                 <div class="content">
-                    {activeTab === "tab1" && <p>Content for Tab 1</p>}
-                    {activeTab === "tab2" && <p>Content for Tab 2</p>}
+                    {activeTab === "tab1" && <p>
+                        Content for Tab 1
+                    </p>}
+                    {activeTab === "tab2" && <div id="tab2">
+                        <div class="container">
+                            <img src={algoma} style={{ width: "150px", height: "150px" }} />
+                            <div id="algoma-container">
+                                <h2>Bachelor of Computer Science</h2>
+                                <h3>Accelerated (1 Year)</h3>
+                                <p>2022 to 2023</p>
+                                <p>Algoma University</p>
+                                <p>Brampton, ON</p>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <img src={nait} style={{ width: "100px", height: "", padding: "0 28px"}} />
+                            <div id="nait-container">
+                                <h2>Instrumentation Engineering Technology</h2>
+                                <h3>With Honours</h3>
+                                <p>2018 to 2020</p>
+                                <p>Northern Alberta Institute of Technology</p>
+                                <p>Edmonton, AB</p>
+                            </div>
+                        </div>
+                    </div>}
                     {activeTab === "tab3" && <p>Content for Tab 3</p>}
                     {activeTab === "tab4" && <p>Content for Tab 4</p>}
                 </div>

@@ -48,7 +48,6 @@ function ContactMe(props) {
                 </div>
                 <div class="content">
                 </div>
-            <iframe src="../Portfolio_WinXP/static/media/Resume%20Isaiah.4ae38261dcc79f2ecd9e.pdf"/>
             </div>
         </Draggable>
     )

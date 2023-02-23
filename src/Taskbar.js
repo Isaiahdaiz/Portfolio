@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import ContactMeTask from './Tasks/ContactMeTask';
 import ResumeTask from './Tasks/ResumeTask';
 import AboutMeTask from './Tasks/AboutMeTask';
+import Clock from './Utility/Clock';
 
 function Taskbar(props) {
     return (
@@ -40,7 +41,7 @@ function Tray() {
     const [dateState, useDateState] = useState(new Date());
     return (
         <div class="tray">
-            <div id="system-time">{dateState.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</div>
+            <Clock />
         </div>
     )
 }

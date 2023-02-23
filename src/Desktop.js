@@ -10,6 +10,7 @@ import useAboutWindow from './Uses/AboutMeWindow';
 import Resume from './Programs/Resume';
 import ResumeIcon from './DesktopIcons/ResumeIcon';
 import useResumeWindow from './Uses/ResumeWindow';
+import GithubIcon from './DesktopIcons/GithubIcon';
 
 function Desktop() {
     const [selectedDiv, setSelectedDiv] = useState(null);
@@ -54,7 +55,7 @@ function Desktop() {
             <AboutMeIcon showWindow={openAboutWindow} />
             <ContactMeIcon showWindow={openContactWindow} />
             <ResumeIcon showWindow={openResumeWindow}/>
-
+            <GithubIcon />
             {/* Wrap as button to handle onblur event */}
             {isContactWindowVisible && <button class="window-button" onClick={handleClick} onBlur={handleBlur}><ContactMe closeWindow={closeContactWindow} restoreWindow={toggleContactWindow} /></button>}
             {isResumeWindowVisible && <button class="window-button" onClick={handleClick} onBlur={handleBlur}><Resume closeWindow={closeResumeWindow} restoreWindow={toggleResumeWindow} /></button>}

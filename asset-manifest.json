@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/Portfolio_WinXP/static/css/main.35d12422.css",
-    "main.js": "/Portfolio_WinXP/static/js/main.80a5196c.js",
+    "main.css": "/Portfolio_WinXP/static/css/main.f8a71720.css",
+    "main.js": "/Portfolio_WinXP/static/js/main.e02b2ac2.js",
     "static/js/787.bc7d429a.chunk.js": "/Portfolio_WinXP/static/js/787.bc7d429a.chunk.js",
     "static/media/windowsXP_Background.jpg": "/Portfolio_WinXP/static/media/windowsXP_Background.17ce657ab1362be245f5.jpg",
     "static/media/Resume Isaiah.pdf": "/Portfolio_WinXP/static/media/Resume Isaiah.4ae38261dcc79f2ecd9e.pdf",
+    "static/media/296109870_878575170182040__n.jpg": "/Portfolio_WinXP/static/media/296109870_878575170182040_4640716686003688037_n.24a22c50aab06d37480a.jpg",
+    "static/media/NAIT-Shield.jpg": "/Portfolio_WinXP/static/media/NAIT-Shield.ea8c018370a4187eaab8.jpg",
     "static/media/PDF_file_icon.png": "/Portfolio_WinXP/static/media/PDF_file_icon.4f4dcc2fd4eb38c4ed54.png",
     "index.html": "/Portfolio_WinXP/index.html",
-    "main.35d12422.css.map": "/Portfolio_WinXP/static/css/main.35d12422.css.map",
-    "main.80a5196c.js.map": "/Portfolio_WinXP/static/js/main.80a5196c.js.map",
+    "main.f8a71720.css.map": "/Portfolio_WinXP/static/css/main.f8a71720.css.map",
+    "main.e02b2ac2.js.map": "/Portfolio_WinXP/static/js/main.e02b2ac2.js.map",
     "787.bc7d429a.chunk.js.map": "/Portfolio_WinXP/static/js/787.bc7d429a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.35d12422.css",
-    "static/js/main.80a5196c.js"
+    "static/css/main.f8a71720.css",
+    "static/js/main.e02b2ac2.js"
   ]
 }

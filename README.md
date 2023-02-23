@@ -8,11 +8,11 @@ Fully responsive design
 Projects section with descriptions and links
 About me section
 Contact form
-Technologies Used
+## Technologies Used
 HTML
 CSS
 JavaScript
-Setup
+## Setup
 To run this project on your local machine, follow these steps:
 
 Clone the repository to your machine

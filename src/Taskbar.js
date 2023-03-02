@@ -9,7 +9,7 @@ import Clock from './Utility/Clock';
 function Taskbar(props) {
     return (
         <div class="taskbar">
-            <Start />
+            <Start toggleStartMenu={props.toggleStartMenu}/>
             <Tasks 
             toggleAboutWindow={props.toggleAboutWindow} isAboutTaskVisible={props.isAboutTaskVisible}
             toggleResumeWindow={props.toggleResumeWindow} isResumeTaskVisible={props.isResumeTaskVisible} 
@@ -19,9 +19,9 @@ function Taskbar(props) {
         </div>
     );
 }
-function Start() {
+function Start(props) {
     return (
-        <div class="start">
+        <div class="start"  onClick={props.toggleStartMenu}>
             <img id="icon" src={logo} />
             Start
         </div>
@@ -38,7 +38,6 @@ function Tasks(props) {
 }
 
 function Tray() {
-    const [dateState, useDateState] = useState(new Date());
     return (
         <div class="tray">
             <Clock />

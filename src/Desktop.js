@@ -1,5 +1,7 @@
 import './App.css';
 import React, { useState } from "react";
+import StartMenu from './StartMenu';
+import useStartMenu from './Uses/StartMenu';
 import ContactMe from './Programs/ContactMe';
 import ContactMeIcon from './DesktopIcons/ContactMeIcon';
 import useContactWindow from './Uses/ContactMeWindow';
@@ -25,6 +27,11 @@ function Desktop() {
             selectedDiv.style.zIndex = 0;
         }
     }
+
+    const {
+        isStartMenuVisible,
+        toggleStartMenu,
+    } = useStartMenu();
 
     const {
         isAboutWindowVisible,
@@ -53,7 +60,7 @@ function Desktop() {
     return (
         <>
             <AboutMeIcon showWindow={openAboutWindow} />
-            <ContactMeIcon showWindow={openContactWindow} />
+            {/* <ContactMeIcon showWindow={openContactWindow} /> */}
             <ResumeIcon showWindow={openResumeWindow}/>
             <GithubIcon />
             {/* Wrap as button to handle onblur event */}
@@ -61,10 +68,13 @@ function Desktop() {
             {isResumeWindowVisible && <button class="window-button" onClick={handleClick} onBlur={handleBlur}><Resume closeWindow={closeResumeWindow} restoreWindow={toggleResumeWindow} /></button>}
             {isAboutWindowVisible && <button class="window-button" onClick={handleClick} onBlur={handleBlur}><AboutMe closeWindow={closeAboutWindow} restoreWindow={toggleAboutWindow} /></button>}
             <Taskbar
+                toggleStartMenu={toggleStartMenu}
                 toggleContactWindow={toggleContactWindow} isContactTaskVisible={isContactTaskVisible}
                 toggleResumeWindow={toggleResumeWindow} isResumeTaskVisible={isResumeTaskVisible}
                 toggleAboutWindow={toggleAboutWindow} isAboutTaskVisible={isAboutTaskVisible}
             />
+            {isStartMenuVisible && <StartMenu/>}
+
         </>
     )
 }

@@ -2,8 +2,11 @@ import '../App.css';
 import Draggable from 'react-draggable';
 import windowIcon from '../img/msinfo32.exe_14_128-7.png';
 import React, { useState } from 'react';
-import algoma from '../img/296109870_878575170182040_4640716686003688037_n.jpg'
-import nait from '../img/NAIT-Shield.jpg'
+import algoma from '../img/296109870_878575170182040_4640716686003688037_n.jpg';
+import nait from '../img/NAIT-Shield.jpg';
+import systemIcon from '../img/System_Icon.png';
+import birdLogo from '../img/logo-bird-100-years.png'
+import ncglLogo from '../img/NCGL_FINAL-01.jpg'
 
 
 function AboutMe(props) {
@@ -22,7 +25,8 @@ function AboutMe(props) {
         borderRadius: isMaximized ? 0 : '2%',
         top: isMaximized ? 0 : undefined,
         left: isMaximized ? 0 : undefined,
-        minWidth: '365px'
+        minWidth: '380px',
+        minHeight: '450px'
     };
 
     function handleMaximizeClick() {
@@ -31,6 +35,10 @@ function AboutMe(props) {
 
     function handleMinimizeClick() {
         setIsMaximized(false);
+    }
+
+    function onClickEmail() {
+        window.location = "mailto:daiz.isaiah@gmail.com";
     }
     const [activeTab, setActiveTab] = useState("tab1");
 
@@ -61,16 +69,32 @@ function AboutMe(props) {
                         Education
                     </button>
                     <button className={activeTab === "tab3" ? "active" : ""} onClick={() => handleClick("tab3")} >
-                        Skills
+                        Experience
                     </button>
                     <button className={activeTab === "tab4" ? "active" : ""} onClick={() => handleClick("tab4")} >
-                        Hobbies
+                        Other
                     </button>
                 </div>
                 <div class="content">
-                    {activeTab === "tab1" && <p>
-                        Content for Tab 1
-                    </p>}
+                    {activeTab === "tab1" && <div id="tab1">
+                        <div class="container">
+                            <img src={systemIcon} style={{ width: "120px", height: "109px" }} />
+                            <div id="text">
+                                <h2>System:</h2>
+                                <p>Isaiah Daiz</p>
+                                <p>Programmer</p>
+                                <p style={{ paddingBottom: "10px" }}>Student</p>
+                                <h2>Registered to:</h2>
+                                <p style={{ paddingBottom: "10px" }}>Edmonton, AB</p>
+                                <h2>Computer:</h2>
+                                <p style={{ paddingBottom: "10px" }}>Driven and dedicated individual with a passion for computer science, health and fitness</p>
+                                <h2>Contact</h2>
+                                <a href='mailto:daiz.isaiah@gmail.com'>daiz.isaiah@gmail.com</a>
+                                <p>(780) 200-9225</p>
+                            </div>
+
+                        </div>
+                    </div>}
                     {activeTab === "tab2" && <div id="tab2">
                         <div class="container">
                             <img src={algoma} style={{ width: "150px", height: "150px" }} />
@@ -83,7 +107,7 @@ function AboutMe(props) {
                             </div>
                         </div>
                         <div class="container">
-                            <img src={nait} style={{ width: "100px", height: "", padding: "0 28px"}} />
+                            <img src={nait} style={{ width: "100px", height: "143px", padding: "0 28px" }} />
                             <div id="nait-container">
                                 <h2>Instrumentation Engineering Technology</h2>
                                 <h3>With Honours</h3>
@@ -93,8 +117,40 @@ function AboutMe(props) {
                             </div>
                         </div>
                     </div>}
-                    {activeTab === "tab3" && <p>Content for Tab 3</p>}
-                    {activeTab === "tab4" && <p>Content for Tab 4</p>}
+                    {activeTab === "tab3" && <div id="tab3">
+                        <div id="logos">
+                            <img src={ncglLogo} alt='ncgl-logo' style={{ width: "150px" }} />
+                            <img src={birdLogo} alt='bird-logo' style={{ width: "150px" }} />
+                        </div>
+                        <h2>PLC/HMI Programmer</h2>
+                        <h3>NCGL Construction Ltd. (BIRD Construction Subsidiary)</h3>
+                        <h3>Edmonton, AB</h3>
+                        <h3>Aug. 2021 to Present</h3>
+                        <p>Designed, code, and tested PLC and HMI programs. Troubleshooted and debugged issues during the programming process.
+                            Performed SCADA upgrades on live processes with a focus on minimizing disruption to the system. Commissioned and conducted on-site acceptance tests to ensure that automation systems functioned properly and met client requirements.
+                            Provided support in the form of 24/7 remote technical support and maintenance services to ensure that the automation systems operated efficiently.</p>
+                    </div>}
+                    {activeTab === "tab4" && <div id="tab4">
+                        <h1>Skills</h1>
+                        <h2>Programming</h2>
+                        <p>Java, Python, C#, CSS, HTML, Javascript, VB, XAML, PLC, Assembly (Irvine32)</p>
+                        <h2>Environments</h2>
+                        <p>VSCode, Rockwell, Proficy (GE), Beijer, Schneider</p>
+                        <h2>Other</h2>
+                        <p style={{ paddingBottom: "10px" }}>Waterfall Development Process, Git, Object-oriented Programming, React, MSSQL</p>
+                        <h1>Awards</h1>
+                        <ul style={{ paddingBottom: "10px" }}>
+                            <li>Jason Lang Scholarship - Alberta Scholarships</li>
+                            <li>Dean’s Honour Roll - Northern Alberta Institute of Technology</li>
+                            <li>Syncrude Higher Education Award Program Scholarship - Awards Canada, Syncrude</li>
+                            <li>Alexander Rutherford Scholarship - Alberta Scholarships</li>
+                        </ul >
+                        <h1>Hobbies</h1>
+                        <img src='https://i.gifer.com/1Sqv.gif' alt='dorito-workout' style={{ width: "150px", height: "150px" }} />
+                        <p>I enjoy engaging in physical activity regularly, including winter sports, cycling, and resistance traning.</p>
+                        <img src='https://64.media.tumblr.com/aadef2ed20ff2edcaedf4fb6b5f8a8b9/tumblr_o93wwcqfyG1tgo74ho1_1280.gif' alt='Overwatch-8bit' style={{ width: "300px", height: "150px" }} />
+                        <p style={{ paddingBottom: "10px" }}>Video games are a popular hobby of mine. I am interested in all games from triple AAA titles to indie developed ones .</p>
+                    </div>}
                 </div>
             </div>
         </Draggable>

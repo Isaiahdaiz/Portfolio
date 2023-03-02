@@ -1,13 +1,18 @@
 import './App.css';
 import React, { useState } from "react";
+import StartMenu from './StartMenu';
+import useStartMenu from './Uses/StartMenu';
 import ContactMe from './Programs/ContactMe';
 import ContactMeIcon from './DesktopIcons/ContactMeIcon';
 import useContactWindow from './Uses/ContactMeWindow';
-import ResumeIcon from './DesktopIcons/ResumeIcon';
 import Taskbar from './Taskbar';
 import AboutMe from './Programs/AboutMe';
 import AboutMeIcon from './DesktopIcons/AboutMeIcon';
 import useAboutWindow from './Uses/AboutMeWindow';
+import Resume from './Programs/Resume';
+import ResumeIcon from './DesktopIcons/ResumeIcon';
+import useResumeWindow from './Uses/ResumeWindow';
+import GithubIcon from './DesktopIcons/GithubIcon';
 
 function Desktop() {
     const [selectedDiv, setSelectedDiv] = useState(null);
@@ -22,6 +27,11 @@ function Desktop() {
             selectedDiv.style.zIndex = 0;
         }
     }
+
+    const {
+        isStartMenuVisible,
+        toggleStartMenu,
+    } = useStartMenu();
 
     const {
         isAboutWindowVisible,
@@ -39,20 +49,32 @@ function Desktop() {
         toggleContactWindow,
     } = useContactWindow();
 
+    const {
+        isResumeWindowVisible,
+        isResumeTaskVisible,
+        openResumeWindow,
+        closeResumeWindow,
+        toggleResumeWindow,
+    } = useResumeWindow();
+
     return (
         <>
             <AboutMeIcon showWindow={openAboutWindow} />
-            <ContactMeIcon showWindow={openContactWindow} />
-
-
-            <ResumeIcon />
+            {/* <ContactMeIcon showWindow={openContactWindow} /> */}
+            <ResumeIcon showWindow={openResumeWindow}/>
+            <GithubIcon />
             {/* Wrap as button to handle onblur event */}
             {isContactWindowVisible && <button class="window-button" onClick={handleClick} onBlur={handleBlur}><ContactMe closeWindow={closeContactWindow} restoreWindow={toggleContactWindow} /></button>}
+            {isResumeWindowVisible && <button class="window-button" onClick={handleClick} onBlur={handleBlur}><Resume closeWindow={closeResumeWindow} restoreWindow={toggleResumeWindow} /></button>}
             {isAboutWindowVisible && <button class="window-button" onClick={handleClick} onBlur={handleBlur}><AboutMe closeWindow={closeAboutWindow} restoreWindow={toggleAboutWindow} /></button>}
             <Taskbar
+                toggleStartMenu={toggleStartMenu}
                 toggleContactWindow={toggleContactWindow} isContactTaskVisible={isContactTaskVisible}
+                toggleResumeWindow={toggleResumeWindow} isResumeTaskVisible={isResumeTaskVisible}
                 toggleAboutWindow={toggleAboutWindow} isAboutTaskVisible={isAboutTaskVisible}
             />
+            {isStartMenuVisible && <StartMenu/>}
+
         </>
     )
 }

@@ -7,7 +7,7 @@ function GithubIcon(props) {
     return (
         <>
             <Draggable defaultClassName={"draggable-icon"} defaultPosition={{ x: 25, y: 75 }}>
-                <div onDoubleClick={props.showWindow}>
+                <div onClick={props.showWindow}>
                     <img id="icon" src={Icon} alt="Resume"></img>
                     <p>Resume</p>
                 </div>

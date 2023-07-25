@@ -1,7 +1,13 @@
 import './App.css';
 import userIcon from './img/StartMenuIcon.png'
+import paperTradesIcon from './img/Paper Trades-logos_transparent1.png'
+
+const paperTradesUrl = 'https://superchat-1ba61.web.app/'
 
 function StartMenu() {
+    const handleOnClick = (url) => {
+        window.location.href = url
+    }
     return (
         <div class='startMenu'>
             <div class='header'>
@@ -9,7 +15,10 @@ function StartMenu() {
                 <p>Guest</p>
             </div>
             <div class='container'>
-                Projects list coming soon
+                <div class='startMenuItem' onClick={() => handleOnClick(paperTradesUrl)}>
+                    <img src={paperTradesIcon} alt='paperTrades Logo' />
+                    <p>Paper Trades</p>
+                </div>
             </div>
         </div>
     )

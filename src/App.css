@@ -149,13 +149,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: left;
-  text-align:left;
+  text-align: left;
   padding: 10px;
 }
 
 .content #tab4 li {
   padding-bottom: 5px;
 }
+
 .content #tab4 img {
   justify-content: center;
   padding: 20px
@@ -400,8 +401,8 @@ body {
   bottom: 40px;
   left: 0;
   height: 300px;
-  width: 200px;
-  background-image: linear-gradient(#245DDA 0%, #2497da 20%,#2497da 80%, #245DDA 100%);
+  width: 250px;
+  background-image: linear-gradient(#245DDA 0%, #2497da 20%, #2497da 80%, #245DDA 100%);
   background-size: cover;
   color: white;
   user-select: none;
@@ -426,14 +427,39 @@ body {
 .startMenu .header p {
   padding-left: 10px;
 }
+
 .startMenu .container {
   background: white;
   border: 2px solid #245edabb;
   border-left: none;
   border-right: none;
   height: 70%;
-  color:black
+  color: black
 }
+
+.startMenu .startMenuItem {
+  display: flex;
+  align-items: center;
+  width: 100% -1px;
+  height: 60px;
+  border: white solid 1px;
+}
+
+.startMenu .startMenuItem:hover {
+  background-color: rgb(185, 185, 185);
+  cursor: pointer;
+}
+
+.startMenuItem img {
+  padding: 5px;
+  height: 40px;
+}
+
+.startMenuItem p {
+  margin-left: 5px;
+}
+
+
 .window-button {
   background: transparent;
   border: none !important;

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio_WinXP/static/css/main.b0cb837b.css",
-    "main.js": "/Portfolio_WinXP/static/js/main.2ae12a38.js",
+    "main.js": "/Portfolio_WinXP/static/js/main.0d3b4fba.js",
     "static/js/787.bc7d429a.chunk.js": "/Portfolio_WinXP/static/js/787.bc7d429a.chunk.js",
     "static/media/windowsXP_Background.jpg": "/Portfolio_WinXP/static/media/windowsXP_Background.17ce657ab1362be245f5.jpg",
     "static/media/NCGL_FINAL-01.jpg": "/Portfolio_WinXP/static/media/NCGL_FINAL-01.d06e2f36f2b40b11c086.jpg",
@@ -12,11 +12,11 @@
     "static/media/PDF_file_icon.png": "/Portfolio_WinXP/static/media/PDF_file_icon.4f4dcc2fd4eb38c4ed54.png",
     "index.html": "/Portfolio_WinXP/index.html",
     "main.b0cb837b.css.map": "/Portfolio_WinXP/static/css/main.b0cb837b.css.map",
-    "main.2ae12a38.js.map": "/Portfolio_WinXP/static/js/main.2ae12a38.js.map",
+    "main.0d3b4fba.js.map": "/Portfolio_WinXP/static/js/main.0d3b4fba.js.map",
     "787.bc7d429a.chunk.js.map": "/Portfolio_WinXP/static/js/787.bc7d429a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0cb837b.css",
-    "static/js/main.2ae12a38.js"
+    "static/js/main.0d3b4fba.js"
   ]
 }

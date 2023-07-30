@@ -1,7 +1,7 @@
-# Portfolio_WinXP
+# Portfolio
 This is a portfolio website that is styled to look like the Windows XP operating system.
 
-Check out the live version of the site [here](https://isaiahdaiz.github.io/Portfolio_WinXP/)
+Check out the live version of the site [here](https://isaiahdaiz.github.io/Portfolio/)
 ## Features
 Windows XP inspired design
 Fully responsive design

@@ -133,9 +133,8 @@ body {
   padding-bottom: 5px;
 }
 
-.content #tab3 p {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.content #tab3 h3 {
+  padding-bottom: 5px;
 }
 
 .content #tab3 #logos {

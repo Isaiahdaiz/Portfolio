@@ -2,7 +2,7 @@ import './App.css';
 import userIcon from './img/StartMenuIcon.png'
 import paperTradesIcon from './img/Paper Trades-logos_transparent1.png'
 
-const paperTradesUrl = 'https://superchat-1ba61.web.app/'
+const paperTradesUrl = 'https://paper-trades-9225.web.app/'
 
 function StartMenu() {
     const handleOnClick = (url) => {

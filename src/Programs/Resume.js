@@ -51,7 +51,7 @@ function Resume(props) {
                     <div class="close" onClick={props.closeWindow}>X</div>
                 </div>
                 {/* <div class="content"> */}
-                    <iframe src="../Portfolio_WinXP/static/media/Resume%20Isaiah.4ae38261dcc79f2ecd9e.pdf" height={"100%"} width={"100%"}/>
+                    <iframe src="../Portfolio/static/media/Resume%20Isaiah.b87e4f1c326715d94509.pdf" height={"100%"} width={"100%"}/>
                 {/* </div> */}
             </div>
         </Draggable>

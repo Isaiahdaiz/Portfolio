@@ -83,9 +83,9 @@ function AboutMe(props) {
                                 <h2>System:</h2>
                                 <p>Isaiah Daiz</p>
                                 <p>Programmer</p>
-                                <p style={{ paddingBottom: "10px" }}>Student</p>
+                                <p style={{ paddingBottom: "10px" }}>Alumni</p>
                                 <h2>Registered to:</h2>
-                                <p style={{ paddingBottom: "10px" }}>Edmonton, AB</p>
+                                <p style={{ paddingBottom: "10px" }}>Toronto, ON</p>
                                 <h2>Computer:</h2>
                                 <p style={{ paddingBottom: "10px" }}>Driven and dedicated individual with a passion for computer science, health and fitness</p>
                                 <h2>Contact</h2>
@@ -100,7 +100,7 @@ function AboutMe(props) {
                             <img src={algoma} style={{ width: "150px", height: "150px" }} />
                             <div id="algoma-container">
                                 <h2>Bachelor of Computer Science</h2>
-                                <h3>Accelerated (1 Year)</h3>
+                                <h3>Accelerated</h3>
                                 <p>2022 to 2023</p>
                                 <p>Algoma University</p>
                                 <p>Brampton, ON</p>
@@ -124,16 +124,14 @@ function AboutMe(props) {
                         </div>
                         <h2>PLC/HMI Programmer</h2>
                         <h3>NCGL Construction Ltd. (BIRD Construction Subsidiary)</h3>
-                        <h3>Edmonton, AB</h3>
-                        <h3>Aug. 2021 to Present</h3>
-                        <p>Designed, code, and tested PLC and HMI programs. Troubleshooted and debugged issues during the programming process.
-                            Performed SCADA upgrades on live processes with a focus on minimizing disruption to the system. Commissioned and conducted on-site acceptance tests to ensure that automation systems functioned properly and met client requirements.
-                            Provided support in the form of 24/7 remote technical support and maintenance services to ensure that the automation systems operated efficiently.</p>
+                        <p>Edmonton, AB</p>
+                        <p>Aug. 2021 to Present</p>
+                        <p></p>
                     </div>}
                     {activeTab === "tab4" && <div id="tab4">
                         <h1>Skills</h1>
                         <h2>Programming</h2>
-                        <p>Java, Python, C#, CSS, HTML, Javascript, VB, XAML, PLC, Assembly (Irvine32)</p>
+                        <p>Java, Kotlin, Python, C#, CSS, HTML, Javascript, SQL, VB, XAML, PLC, Assembly (Irvine32), Ladder Logic, Function Block Diagram, Structured Text</p>
                         <h2>Environments</h2>
                         <p>VSCode, Rockwell, Proficy (GE), Beijer, Schneider</p>
                         <h2>Other</h2>

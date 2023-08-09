@@ -7,7 +7,7 @@ function ContactMeIcon(props) {
     return (
         <>
             <Draggable defaultClassName={"draggable-icon"} defaultPosition={{ x: 25, y: 50 }}>
-                <div onDoubleClick={props.showWindow}>
+                <div onClick={props.showWindow}>
                     <img id="icon" src={icon} alt="Contact Me"></img>
                     <p>Contact Me</p>
                 </div>
